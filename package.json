@@ -12,8 +12,8 @@
   },
   "scripts": {
     "dev": "vite",
-	"build": "npm run build:client && copy _redirects dist\\_redirects && npm run build:server",
-	"build:client": "vite build",
+	"build": "npm run build:client && cpx _redirects dist && npm run build:server",
+    "build:client": "vite build",
     "build:server": "vite build --config vite.config.server.ts",
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",
@@ -21,10 +21,10 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-	"dotenv": "^17.2.1",
-	"express": "^5.1.0",
-	"pg": "^8.16.3",
-	"zod": "^3.25.76"
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@hookform/resolvers": "^5.2.1",
@@ -72,6 +72,7 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "cors": "^2.8.5",
+    "cpx": "^1.2.1",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.23.12",
