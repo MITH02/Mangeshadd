@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: "dist",
+    outDir: "dist/spa",
   },
   plugins: [react(), expressPlugin()],
   resolve: {
