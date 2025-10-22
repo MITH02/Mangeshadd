@@ -369,7 +369,7 @@ export default function Home() {
                 <p><span className="font-semibold text-[#0f2a55]">Address:</span> Office Address: Plot.No.3, Saptak Nagar, Near SRPF gate no.3, Jaitala Road, Nagpur - 440016</p>
                 <p><span className="font-semibold text-[#0f2a55]">Email:</span> adv.mangeshladhe@gmail.com</p>
                 <p><span className="font-semibold text-[#0f2a55]">Phone:</span> +91 8308761040</p>
-                <p className="text-sm text-slate-500">Office hours: Mon–Sun, 10:00–18:00</p>
+                <p className="text-sm text-slate-500">Office hours: Mon–Sun, 10:00 AM – 09:00 PM</p>
               </div>
               <form className="bg-white rounded-lg border p-6 grid gap-4">
                 <input className="border rounded-md px-3 py-2" placeholder="Full Name *" required />
