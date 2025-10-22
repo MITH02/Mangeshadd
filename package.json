@@ -12,10 +12,9 @@
   },
   "scripts": {
     "dev": "vite",
-	"build": "npm run build:client && cpx _redirects dist/spa && npm run build:server",
-	"build:client": "vite build",
-    "build:server": "vite build --config vite.config.server.ts",
-    "start": "node dist/server/node-build.mjs",
+    "build": "npm run build:client && cpx _redirects dist\\spa",
+    "build:client": "vite build",
+    "start": "serve -s dist/spa",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
     "typecheck": "tsc"
@@ -89,6 +88,7 @@
     "react-resizable-panels": "^3.0.4",
     "react-router-dom": "^6.30.1",
     "recharts": "^2.12.7",
+    "serve": "^14.2.5",
     "serverless-http": "^3.2.0",
     "sonner": "^1.7.4",
     "tailwind-merge": "^2.6.0",
