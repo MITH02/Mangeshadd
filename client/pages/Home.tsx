@@ -71,8 +71,7 @@ export default function Home() {
               {/*<h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight max-w-3xl">*/}
               {/*</h2>*/}
               <p className="mt-4 text-white/90 max-w-3xl">
-                WELCOME TO The Chambers of Mangesh Ladhe is founded by Mr. Mangesh Ladhe le who is an Advocate-on-Record in Supreme Court of India. Mr. mangesh and his team are known for their sharp wit to crack complex legal problems through their exquisite interpretational skills.
-              </p>
+                Welcome to the Chambers of Adv. Mangesh Ladhe, established by Adv. Mangesh Ladhe, an advocate practicing at the Bombay High Court, Nagpur Bench. Renowned for their sharp wit and exceptional interpretational skills, Adv. Mangesh and his team are adept at resolving complex legal challenges with precision and clarity.</p>
               <p className="mt-3 text-white/90 max-w-2xl">
                 Advocate Mangesh Ladhe represents clients across civil and criminal matters, constitutional litigation, writs, and corporate advisory with utmost diligence and integrity.
               </p>
