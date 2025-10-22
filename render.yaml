@@ -1,7 +1,7 @@
 services:
   - type: web
     name: advocate-mangesh-ladhe
-    env: static
+    env: node
     plan: free
     buildCommand: pnpm install && pnpm run build
-    staticPublishPath: dist/spa
+    startCommand: node server.js
