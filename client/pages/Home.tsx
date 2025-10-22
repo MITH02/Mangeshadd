@@ -368,7 +368,7 @@ export default function Home() {
             <div className="mt-6 grid md:grid-cols-2 gap-8">
               <div className="space-y-3 text-slate-700">
                 <p><span className="font-semibold text-[#0f2a55]">Address:</span> Office Address: Plot.No.3, Saptak Nagar, Near SRPF gate no.3, Jaitala Road, Nagpur - 440016</p>
-                <p><span className="font-semibold text-[#0f2a55]">Email:</span> contact@mangeshladhe.com</p>
+                <p><span className="font-semibold text-[#0f2a55]">Email:</span> adv.mangeshladhe@gmail.com</p>
                 <p><span className="font-semibold text-[#0f2a55]">Phone:</span> +91 8308761040</p>
                 <p className="text-sm text-slate-500">Office hours: Mon–Sun, 10:00–18:00</p>
               </div>

@@ -57,7 +57,7 @@ export default function Footer() {
           <p><span className="font-semibold">Address:</span> Plot.No.3, Saptak Nagar, Near SRPF gate no.3, Jaitala Road, Nagpur - 440016</p>
           <p className="mt-2"><span className="font-semibold">Hours:</span> Closes at 9 PM</p>
           <p className="mt-2"><span className="font-semibold">Phone:</span> +91 8308761040</p>
-          <p className="mt-2"><span className="font-semibold">Email:</span> contact@mangeshladhe.com</p>
+          <p className="mt-2"><span className="font-semibold">Email:</span> adv.mangeshladhe@gmail.com</p>
         </div>
       </div>
       <div className="bg-[#0f2a55] text-white text-center text-sm py-3">The Chambers of Mangesh Ladhe. 2022 – 2025. All Rights Reserved.</div>

@@ -23,7 +23,9 @@ import Placeholder from "./pages/Placeholder";
 const queryClient = new QueryClient();
 
 function ProtectedRoute({ children }: { children: JSX.Element }) {
-  const consent = typeof window !== "undefined" && localStorage.getItem("mladhe_consent") === "true";
+  const consent =
+    typeof window !== "undefined" &&
+    localStorage.getItem("mladhe_consent") === "true";
   return consent ? children : <Navigate to="/" replace />;
 }
 
@@ -119,6 +121,20 @@ const App = () => (
           <Route path="/placeholder/:slug" element={<Placeholder />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+
+        {/* ✅ Floating WhatsApp Icon */}
+        <a
+          href="https://wa.me/918308761040?text=Good%20day%2C%20I%20would%20like%20to%20consult%20you%20regarding%20a%20legal%20case.%20Please%20let%20me%20know%20a%20suitable%20time%20to%20connect."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition-all animate-bounce"
+        >
+          <img
+            src="/images/whatsapp-icon.png"
+            alt="WhatsApp"
+            className="w-8 h-8"
+          />
+        </a>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

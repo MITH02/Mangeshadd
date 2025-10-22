@@ -55,8 +55,8 @@ export default function Index() {
           <section className="mt-10 mb-16 bg-white/80 rounded-md p-4 sm:p-6 text-[#0f2a55]">
             <div className="text-center space-y-1 text-sm sm:text-base">
               <p><span className="font-semibold">Address:</span> Office Address: Plot.No.3, Saptak Nagar, Near SRPF gate no.3, Jaitala Road, Nagpur - 440016</p>
-              <p><span className="font-semibold">Email:</span> contact@mangeshladhe.com</p>
-              <p><span className="font-semibold">Phone:</span> +91 9910024351</p>
+              <p><span className="font-semibold">Email:</span> adv.mangeshladhe@gmail.com</p>
+              <p><span className="font-semibold">Phone:</span> +91 8308761040</p>
             </div>
           </section>
         </main>
