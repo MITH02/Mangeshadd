@@ -36,7 +36,7 @@ export default function Home() {
             <div className="leading-tight">
               <p className="text-xs tracking-[0.4em] uppercase text-[#0f2a55]/70">The Chambers of</p>
               <h1 className="text-xl font-bold tracking-wide">Mangesh Ladhe</h1>
-              <p className="text-xs text-[#0f2a55]/70">Attorneys at Law</p>
+              <p className="text-xs text-[#0f2a55]/70">Advocate</p>
             </div>
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-[#0f2a55]">

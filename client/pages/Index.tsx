@@ -25,7 +25,7 @@ export default function Index() {
             <div>
               <p className="text-xs tracking-[0.4em] uppercase text-white/80">The Chambers of</p>
               <h1 className="text-2xl sm:text-3xl font-extrabold tracking-wide">Mangesh Ladhe</h1>
-              <p className="text-sm text-white/70">Attorneys at Law</p>
+              <p className="text-sm text-white/70">Advocate</p>
             </div>
           </div>
           <Button asChild className="hidden sm:inline-flex bg-white/10 border border-white/30 text-white hover:bg-white/20">
@@ -37,7 +37,7 @@ export default function Index() {
             <div className="text-center">
               <BrandMark className="h-32 w-32 mx-auto text-[#0b1f3a]" />
               <h2 className="text-[#0b1f3a] text-3xl sm:text-4xl font-serif font-semibold mt-6 tracking-wide">Mangesh Ladhe</h2>
-              <p className="text-[#8b94b2] uppercase tracking-[0.4em] text-xs sm:text-sm">Attorneys at Law</p>
+              <p className="text-[#8b94b2] uppercase tracking-[0.4em] text-xs sm:text-sm">Advocate</p>
             </div>
             <h3 className="text-[#0f2a55] text-2xl sm:text-3xl font-bold text-center mt-10">Disclaimer</h3>
             <div className="mt-6 sm:mt-8 space-y-4 text-slate-600 leading-relaxed text-sm sm:text-base bg-white/90 p-6 sm:p-8 rounded-2xl border border-slate-100">

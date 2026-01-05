@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="leading-tight">
               <p className="text-xs uppercase tracking-[0.4em] opacity-70">The Chambers of</p>
               <p className="text-lg font-bold">Mangesh Ladhe</p>
-              <p className="text-xs text-[#0f2a55]/70">Attorneys at Law</p>
+              <p className="text-xs text-[#0f2a55]/70">Advocate</p>
             </div>
           </div>
           <p className="text-sm text-slate-600">
