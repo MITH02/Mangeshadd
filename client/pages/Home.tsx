@@ -72,9 +72,9 @@ export default function Home() {
           <div className="relative max-w-5xl mx-auto px-6 py-16 md:py-24 text-center flex flex-col items-center gap-8">
             <div className="space-y-6 max-w-3xl">
               <p className="text-xs uppercase tracking-[0.4em] text-white/70">The Chambers of</p>
-              <h1 className="text-3xl md:text-5xl font-serif font-semibold leading-tight">
-                Advocate Mangesh Ladhe – India’s Most Trusted High Court & Supreme Court Lawyer
-              </h1>
+              {/*<h1 className="text-3xl md:text-5xl font-serif font-semibold leading-tight">*/}
+              {/*  Advocate Mangesh Ladhe – India’s Most Trusted High Court & Supreme Court Lawyer*/}
+              {/*</h1>*/}
               <p className="text-lg md:text-xl text-white/85 leading-relaxed">
                 Welcome to the Chambers of Adv. Mangesh Ladhe, established by Adv. Mangesh Ladhe, an advocate practicing at the Bombay High Court, Nagpur Bench. Renowned for their sharp wit and exceptional interpretational skills, Adv. Mangesh and his team are adept at resolving complex legal challenges with precision and clarity.
               </p>

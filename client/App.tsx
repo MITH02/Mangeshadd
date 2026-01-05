@@ -21,6 +21,7 @@ import CompetitionLaw from "./pages/practice/CompetitionLaw";
 import ServiceLaw from "./pages/practice/ServiceLaw";
 import Placeholder from "./pages/Placeholder";
 import Articles from "./pages/Articles";
+import crestFavicon from "@/logos/Advocate_Mangesh_Ladhe_Logo.png";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +44,17 @@ const App = () => {
       meta.setAttribute("content", content);
     };
 
+    const setFavicon = (href: string) => {
+      let link = document.querySelector("link[rel='icon']") as HTMLLinkElement | null;
+      if (!link) {
+        link = document.createElement("link");
+        link.rel = "icon";
+        document.head.appendChild(link);
+      }
+      link.type = "image/png";
+      link.href = href;
+    };
+
     document.title = "Advocate Mangesh Ladhe | Best High Court & Supreme Court Lawyer in India";
     setMeta(
       "description",
@@ -52,6 +64,7 @@ const App = () => {
       "keywords",
       "Advocate Mangesh Ladhe, best lawyer in India, Bombay High Court advocate, Nagpur top lawyer, Supreme Court attorney"
     );
+    setFavicon(crestFavicon);
   }, []);
 
   return (
