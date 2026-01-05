@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -11,6 +12,9 @@ import BrandMark from "@/components/BrandMark";
 import nagpurCourt from "@/logos/Nagpur_Court_Image.png";
 
 export default function Home() {
+  const [infoStatus, setInfoStatus] = useState<"idle" | "submitted">("idle");
+  const [contactStatus, setContactStatus] = useState<"idle" | "submitted">("idle");
+
   const areas = [
     { id: "criminal-law", title: "Criminal Law", desc: "Bail, trials, appeals, and defense in criminal matters." },
     { id: "white-collar-crimes", title: "White Collar Crimes", desc: "Economic offenses, fraud, corruption, and regulatory prosecutions." },
@@ -322,7 +326,13 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-lg font-semibold text-[#0f2a55]">See information</h3>
-              <form className="mt-4 bg-white rounded-lg border p-6 grid gap-4">
+              <form
+                className="mt-4 bg-white rounded-lg border p-6 grid gap-4"
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  setInfoStatus("submitted");
+                }}
+              >
                 <label className="text-sm font-medium text-slate-700" htmlFor="info-name">Full Name <span className="text-red-500">*</span></label>
                 <input id="info-name" className="border rounded-md px-3 py-2" placeholder="Full Name" required />
                 <label className="text-sm font-medium text-slate-700" htmlFor="info-email">Email <span className="text-red-500">*</span></label>
@@ -339,8 +349,12 @@ export default function Home() {
                   <option>Consumer Protection Disputes</option>
                   <option>Competition Law</option>
                   <option>Service Law</option>
+                  <option>Other</option>
                 </select>
                 <button type="submit" className="justify-self-start inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[#0f2a55] text-white hover:bg-[#0f2a55]/90">Submit</button>
+                {infoStatus === "submitted" && (
+                  <p className="text-green-600 text-sm font-semibold" aria-live="polite">Submitted</p>
+                )}
               </form>
             </div>
           </div>
@@ -379,7 +393,13 @@ export default function Home() {
                 <p><span className="font-semibold text-[#0f2a55]">Phone:</span> +91 8308761040</p>
                 <p className="text-sm text-slate-500">Office hours: Mon–Sun, 10:00 AM – 09:00 PM</p>
               </div>
-              <form className="bg-white rounded-lg border p-6 grid gap-4">
+              <form
+                className="bg-white rounded-lg border p-6 grid gap-4"
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  setContactStatus("submitted");
+                }}
+              >
                 <input className="border rounded-md px-3 py-2" placeholder="Full Name *" required />
                 <input type="email" className="border rounded-md px-3 py-2" placeholder="Email *" required />
                 <select className="border rounded-md px-3 py-2" defaultValue="" required>
@@ -393,10 +413,14 @@ export default function Home() {
                   <option>Consumer Protection Disputes</option>
                   <option>Competition Law</option>
                   <option>Service Law</option>
+                  <option>Other</option>
                 </select>
                 <input className="border rounded-md px-3 py-2" placeholder="Phone" />
                 <textarea className="border rounded-md px-3 py-2 h-28" placeholder="Message" />
-                <Button className="bg-[#0f2a55] hover:bg-[#0f2a55]/90">Submit</Button>
+                <Button type="submit" className="bg-[#0f2a55] hover:bg-[#0f2a55]/90">Submit</Button>
+                {contactStatus === "submitted" && (
+                  <p className="text-green-600 text-sm font-semibold" aria-live="polite">Submitted</p>
+                )}
               </form>
             </div>
           </div>
