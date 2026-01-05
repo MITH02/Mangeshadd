@@ -1,15 +1,19 @@
 import { Link } from "react-router-dom";
+import BrandMark from "@/components/BrandMark";
 
 export default function Footer() {
   return (
-    <footer className="border-t-4 border-[#0f2a55] bg-white text-[#0f2a55]">
-      <div className="max-w-7xl mx-auto px-6 py-10 grid gap-10 md:grid-cols-4">
+    <footer className="border-t-4 border-[#0f2a55] bg-gradient-to-b from-white via-[#f7f9ff] to-white text-[#0f2a55]">
+      <div className="max-w-7xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-4">
         <div className="space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-full bg-[#0f2a55] text-white grid place-items-center font-extrabold">ML</div>
+          <div className="flex items-center gap-4">
+            <div className="h-14 w-14 rounded-full bg-[#0f2a55] grid place-items-center shadow-lg shadow-[#0f2a55]/20">
+              <BrandMark tone="white" className="h-9 w-9" />
+            </div>
             <div className="leading-tight">
-              <p className="text-xs uppercase tracking-widest opacity-70">The Chambers of</p>
-              <p className="text-lg font-extrabold">Mangesh Ladhe</p>
+              <p className="text-xs uppercase tracking-[0.4em] opacity-70">The Chambers of</p>
+              <p className="text-lg font-bold">Mangesh Ladhe</p>
+              <p className="text-xs text-[#0f2a55]/70">Attorneys at Law</p>
             </div>
           </div>
           <p className="text-sm text-slate-600">

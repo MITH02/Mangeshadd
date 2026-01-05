@@ -7,6 +7,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Footer from "@/components/Footer";
+import BrandMark from "@/components/BrandMark";
+import nagpurCourt from "@/logos/Nagpur_Court_Image.png";
 
 export default function Home() {
   const areas = [
@@ -25,11 +27,12 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <header className="border-b bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-30">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link to="/home" className="flex items-center gap-3 text-[#0f2a55]">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-7 w-7 text-[#f0c75e]"><path d="M12 2c-1.1 0-2 .9-2 2v1H7a1 1 0 100 2h10a1 1 0 100-2h-3V4a2 2 0 00-2-2z"/><path d="M6 9a1 1 0 011-1h10a1 1 0 011 1v1.5a5.5 5.5 0 01-11 0V9z"/><path d="M4 20a1 1 0 001 1h14a1 1 0 001-1v-2H4v2z"/></svg>
-            <div>
-              <p className="text-xs tracking-widest uppercase text-[#0f2a55]/70">The Chambers of</p>
-              <h1 className="text-xl font-extrabold tracking-wide">Mangesh Ladhe</h1>
+          <Link to="/home" className="flex items-center gap-4 text-[#0f2a55]">
+            <BrandMark className="h-12 w-12" />
+            <div className="leading-tight">
+              <p className="text-xs tracking-[0.4em] uppercase text-[#0f2a55]/70">The Chambers of</p>
+              <h1 className="text-xl font-bold tracking-wide">Mangesh Ladhe</h1>
+              <p className="text-xs text-[#0f2a55]/70">Attorneys at Law</p>
             </div>
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-[#0f2a55]">
@@ -59,31 +62,36 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        <section className="relative">
+        <section className="relative isolate overflow-hidden text-white">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F428ecd5431db415eb36315ca1678cf02%2F22b7ccbaf1654c6d9f61e8a7883cfe7c?format=webp&width=1920"
-            alt="Supreme Court of India"
-            className="h-[60vh] w-full object-cover object-[50%_22%] md:object-[50%_18%]"
+            src={nagpurCourt}
+            alt="Nagpur Court"
+            className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-[#0f2a55]/70" />
-          <div className="absolute inset-0 flex items-center">
-            <div className="max-w-7xl mx-auto px-6">
-              {/*<h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight max-w-3xl">*/}
-              {/*</h2>*/}
-              <p className="mt-4 text-white/90 max-w-3xl">
-                Welcome to the Chambers of Adv. Mangesh Ladhe, established by Adv. Mangesh Ladhe, an advocate practicing at the Bombay High Court, Nagpur Bench. Renowned for their sharp wit and exceptional interpretational skills, Adv. Mangesh and his team are adept at resolving complex legal challenges with precision and clarity.</p>
-              <p className="mt-3 text-white/90 max-w-2xl">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0b1f3a]/95 via-[#0b1f3a]/70 to-transparent" />
+          <div className="relative max-w-5xl mx-auto px-6 py-16 md:py-24 text-center flex flex-col items-center gap-8">
+            <div className="space-y-6 max-w-3xl">
+              <p className="text-xs uppercase tracking-[0.4em] text-white/70">The Chambers of</p>
+              <h1 className="text-3xl md:text-5xl font-serif font-semibold leading-tight">
+                Advocate Mangesh Ladhe – India’s Most Trusted High Court & Supreme Court Lawyer
+              </h1>
+              <p className="text-lg md:text-xl text-white/85 leading-relaxed">
+                Welcome to the Chambers of Adv. Mangesh Ladhe, established by Adv. Mangesh Ladhe, an advocate practicing at the Bombay High Court, Nagpur Bench. Renowned for their sharp wit and exceptional interpretational skills, Adv. Mangesh and his team are adept at resolving complex legal challenges with precision and clarity.
+              </p>
+              <p className="text-white/80 leading-relaxed">
                 Advocate Mangesh Ladhe represents clients across civil and criminal matters, constitutional litigation, writs, and corporate advisory with utmost diligence and integrity.
               </p>
-              <div className="mt-6 flex gap-4">
-                <Button className="bg-[#f0c75e] text-[#0f2a55] hover:bg-[#f0c75e]/90">Book a Consultation</Button>
-                <a href="#areas-of-practice" className="text-white underline-offset-4 hover:underline">Explore Areas Of Practice</a>
-              </div>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button className="bg-[#f0c75e] text-[#0b1f3a] hover:bg-[#f0c75e]/90">Request Consultation</Button>
+              <Button asChild className="bg-white/10 border border-white/30 text-white hover:bg-white/20">
+                <a href="#areas-of-practice">View Practice Areas</a>
+              </Button>
             </div>
           </div>
         </section>
 
-        <section id="areas-of-practice" className="py-16 bg-slate-50">
+        <section id="areas-of-practice" className="py-16 bg-gradient-to-b from-[#f7f9ff] to-white">
           <div className="max-w-7xl mx-auto px-6">
             <h3 className="text-2xl md:text-3xl font-bold text-[#0f2a55]">Areas Of Practice</h3>
             <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
