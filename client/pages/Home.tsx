@@ -362,15 +362,20 @@ export default function Home() {
 
         <section id="about" className="py-16">
           <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-            <img
-              src="/images/AdvocateImage.jpg"
-              alt="Law books"
-              className="rounded-lg shadow-md w-full max-h-[450px] object-contain bg-gradient-to-br from-slate-50 to-slate-100"
-            />
+
+            <div className="w-full h-[450px] overflow-hidden rounded-xl shadow-lg">
+              <img
+                src="/images/AdvocateImage.jpg"
+                alt="Advocate Mangesh Ladhe"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-[#0f2a55]">
                 About Advocate Mangesh Ladhe
               </h3>
+
               <p className="mt-4 text-slate-700 leading-relaxed">
                 With extensive experience across multiple jurisdictions, Advocate
                 Mangesh Ladhe combines strategic litigation with precise legal
