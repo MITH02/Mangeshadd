@@ -365,7 +365,7 @@ export default function Home() {
             <img
               src="/images/AdvocateImage.jpg"
               alt="Law books"
-              className="rounded-lg shadow-md object-cover object-[50%_20%] h-72 w-full"
+              className="rounded-lg shadow-md w-full max-h-[450px] object-contain bg-gradient-to-br from-slate-50 to-slate-100"
             />
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-[#0f2a55]">
